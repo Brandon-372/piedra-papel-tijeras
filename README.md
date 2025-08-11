@@ -1,22 +1,47 @@
-\_\_pycache\_\_/
+# Piedra, Papel o Tijera — Python (consola)
 
-\*.pyc
+## Objetivo
+Desarrollar un programa simple que evidencie operadores relacionales y lógicos, condicionales `if/elif/else`, bucles `while/for` y alteradores de bucle `break/continue/pass`.
 
-.venv/
+## Cómo ejecutar (Windows)
+1. Activar entorno: `.\.venv\Scripts\Activate.ps1`
+2. Ejecutar: `python src\main.py`
+3. Tests: `python -m pytest -q`
 
-.env
+## Estructura
+```
+src/ # código fuente (main.py)
+tests/ # pruebas (pytest)
+diagrams/ # diagramas Mermaid
+```
 
-.vscode/
+## Diagramas
+- [Flujo principal](diagrams/flujo-principal.md)
+- [Módulos / funciones](diagrams/modulos.md)
 
-.idea/
+---
 
+## Paso 1 — Evidencia (investigación y análisis)
+- Uso de **GitHub** para versionado y trazabilidad.
+- **Diagramas de flujo (Mermaid)** para validar la lógica antes de codificar.
+- Comparación: repos documentados vs. no documentados → impacto en mantenimiento y evaluación.
 
+## Paso 1 — Posición del estudiante
+Elegí *Piedra-Papel-Tijera* porque permite aplicar claramente la Unidad 3: condicionales para resolver rondas, `for` para las partidas, `while` para el menú y `break/continue` para controlar el flujo. Es simple pero escalable (estadísticas, GUI, niveles).
 
-\# Piedra, Papel o Tijera — Python (consola)
+## Paso 1 — Conclusiones y logros
+- Repo con entorno virtual, pruebas y diagramas.
+- Primer avance funcional ejecutable desde consola.
 
+---
 
+## Paso 2 — Implementación (resumen)
+- **Operadores**: `==`, `!=`, `<=`, `>=`, `%`, `in`/`not in`.
+- **Lógicos**: `and`, `or`, `not`.
+- **Condicionales**: `if/elif/else`.
+- **Bucles**: `while True` (menú) y `for` (rondas).
+- **Alteradores**: `break`, `continue`, `pass`.
 
-Proyecto para practicar operadores relacionales y lógicos, condicionales `if`, bucles `while/for` y alteradores `break/continue/pass`.
 
 
 
