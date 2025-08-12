@@ -4,6 +4,7 @@
 flowchart TD
     A[Inicio] --> B[Menu: Jugar/Salir];
     B -->|Jugar| C[Leer N (impar)];
+
     B -->|Salir| Z[Fin];
     C --> D[for ronda en 1..N];
     D --> E[Leer eleccion usuario];
