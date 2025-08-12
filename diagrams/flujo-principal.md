@@ -4,19 +4,19 @@
 flowchart TD
     A[Inicio] --> B[Menu: Jugar/Salir];
     B -->|Jugar| C[Leer N (impar)];
-    B -->|Salir| O[Fin];
+    B -->|Salir| Z[Fin];
     C --> D[for ronda en 1..N];
-    D --> E[Leer elección usuario];
-    E --> F[Elección PC];
+    D --> E[Leer eleccion usuario];
+    E --> F[Eleccion PC];
     F --> G[Comparar elecciones];
     G --> H{Resultado};
-    H -->|Usuario| I[+1 Usuario];
-    H -->|PC| J[+1 PC];
-    H -->|Empate| K[Empates];
-    I --> L{¿Alcanzó mayoría?};
-    J --> L;
-    K --> D;
-    L -->|Sí| M[Fin del match];
+    H -->|Usuario| IU[+1 Usuario];
+    H -->|PC| IP[+1 PC];
+    H -->|Empate| IE[Empates];
+    IU --> L{Alcanzo mayoria?};
+    IP --> L;
+    IE --> D;
+    L -->|Si| M[Fin del match];
     L -->|No| D;
     M --> N[Mostrar marcador final];
 ```
